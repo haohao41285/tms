@@ -92,7 +92,7 @@
     <!-- //middle -->
     <div class="testimonials">
         <div class="container">
-            <h3 class="w3l_header w3_agileits_header">Latest <span>News</span></h3>
+            <h3 class="w3l_header w3_agileits_header">Q&A</h3>
             <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
             <div class="agile_team_grids_top">
                 <div class="col-md-4 w3_agile_services_grid">
@@ -104,21 +104,7 @@
                         <h4><span>Fund</span>ing</h4>
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
-                        <div class="w3_agileits_services_grid1">
-                            <div class="w3_agileits_services_grid1l">
-                                <img src="images/6.png" alt=" " class="img-responsive">
-                            </div>
-                            <div class="w3_agileits_services_grid1r">
-                                <ul>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
+                        
                         <h4><a href="#" data-toggle="modal" data-target="#myModal">Sed dictum augue quis varius</a>
                         </h4>
                         <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
@@ -133,21 +119,6 @@
                         <h4><span>Fund</span>ing</h4>
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
-                        <div class="w3_agileits_services_grid1">
-                            <div class="w3_agileits_services_grid1l">
-                                <img src="images/2.png" alt=" " class="img-responsive">
-                            </div>
-                            <div class="w3_agileits_services_grid1r">
-                                <ul>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
                         <h4><a href="#" data-toggle="modal" data-target="#myModal">lobortis sem dictum placerat</a>
                         </h4>
                         <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
@@ -162,21 +133,6 @@
                         <h4><span>Fund</span>ing</h4>
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
-                        <div class="w3_agileits_services_grid1">
-                            <div class="w3_agileits_services_grid1l">
-                                <img src="images/1.png" alt=" " class="img-responsive">
-                            </div>
-                            <div class="w3_agileits_services_grid1r">
-                                <ul>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                </ul>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
                         <h4><a href="#" data-toggle="modal" data-target="#myModal">Praesent amet tempor risus</a>
                         </h4>
                         <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
@@ -187,23 +143,6 @@
             </div>
         </div>
     </div>
-    <!-- /flip -->
-    <div class="w3_agile_timer">
-        <!--timer-->
-        <div class="agileits-timer">
-            <div class="main-title">
-                <h4>
-                    <p>Spend your money</p>It Save Tons of time
-                </h4>
-                <div class="demo2"></div>
-            </div>
-        </div>
-
-        <!--//timer-->
-
-
-    </div>
-    <!-- //flip -->
     <!-- bootstrap-pop-up -->
     <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
         <div class="modal-dialog" role="document">
@@ -300,52 +239,6 @@
             </ul>
         </div>
     </div>
-    <!-- //gallery -->
-    <!-- testimonials -->
-    <div class="testimonials">
-        <div class="container">
-            <h3 class="w3l_header w3_agileits_header">Our <span>Clients</span></h3>
-            <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
-            <div class="w3ls_testimonials_grids">
-                <section class="center slider">
-                    <div class="agileits_testimonial_grid">
-                        <div class="w3l_testimonial_grid">
-                            <p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
-                                non laoreet dolor.</p>
-                            <h4>Rosy Crisp</h4>
-                            <h5>Client</h5>
-                            <div class="w3l_testimonial_grid_pos">
-                                <img src="images/1.png" alt=" " class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agileits_testimonial_grid">
-                        <div class="w3l_testimonial_grid">
-                            <p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
-                                non laoreet dolor.</p>
-                            <h4>Laura Paul</h4>
-                            <h5>Client</h5>
-                            <div class="w3l_testimonial_grid_pos">
-                                <img src="images/2.png" alt=" " class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="agileits_testimonial_grid">
-                        <div class="w3l_testimonial_grid">
-                            <p>In eu auctor felis, id eleifend dolor. Integer bibendum dictum erat,
-                                non laoreet dolor.</p>
-                            <h4>Michael Doe</h4>
-                            <h5>Client</h5>
-                            <div class="w3l_testimonial_grid_pos">
-                                <img src="images/3.png" alt=" " class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <!-- //testimonials -->
 @endsection
 
 @push('js')
