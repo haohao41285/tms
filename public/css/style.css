@@ -332,7 +332,7 @@ h3.agileinfo_sign  {
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 300px;
+    min-height: 150px;
 }
 /*-- nav --*/
 .navbar-default {
@@ -353,8 +353,8 @@ h3.agileinfo_sign  {
     background:none;
 }
 .navbar-default .navbar-nav > li > a {
-    font-weight:600;
-    letter-spacing: 1px;
+    /* font-weight:600;
+    letter-spacing: 1px; */
 	font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
@@ -723,7 +723,7 @@ background: rgba(0, 0, 0, 0.17);
 }
 /*-- //gallery --*/
 .testimonials,.team,.Funding_section {
-    padding: 5em 0;
+    padding: 2em 0;
 }
 .w3l_header {
     font-size: 2.5em;
@@ -748,13 +748,11 @@ h3.w3l_header.w3_agileits_header.two {
     text-align: center;
     font-style: italic;
     font-size: 1em;
-    font-weight: 600;
     color: #48506b;
-    letter-spacing: 2px;
-    margin-top: 1em;
+    margin-top: 5px;
 }
 .agile_team_grids_top {
-    margin-top: 3em;
+    margin-top: 1em;
 }
 .agileits_w3layouts_banner_bottom_grid img {
     width: 100%;
@@ -1337,7 +1335,7 @@ button.close {
 }
 /*-- courses --*/
 .wthree_banner1_info {
-    padding: 8em 0 0;
+    padding: 4em 0 0;
     text-align: center;
 }
 .wthree_banner1_info h3{
@@ -1819,9 +1817,9 @@ font-size: 16px;
     color: #212121;
     outline: none;
     width: 100%;
-    min-height: 174px;
+    min-height: 115px;
     resize: none;
-    margin: 3em 0;
+    margin: 0 0 2em 0;
     background: none;
     border: none;
     border-bottom: 3px solid #e3e3e3;

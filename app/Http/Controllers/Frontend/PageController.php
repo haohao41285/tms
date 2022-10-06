@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\Contact;
 
 class PageController extends Controller
 {
@@ -24,7 +26,16 @@ class PageController extends Controller
     }
     
     public function contactUsPost(ContactRequest $request){
-        dd($request->all());
+        $data = $request->all();
+        $email = $data['email'];
+
+        if ($data['subject'] == 1) $data['subject'] = 'Contact - Design Website';
+        elseif ($data['subject'] == 2) $data['subject'] = 'Contact - Advertising';
+        else $data['subject'] = 'Contact - Other';
+        
+        Mail::to($email)->send(new Contact($data));
+        return back()->with('success', 'Thanks for contact us');
+        
     }
     
     public function qa(){

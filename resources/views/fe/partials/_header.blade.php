@@ -22,11 +22,7 @@
         
         </div>
         <div class="w3_agile_search">
-            <form action="#" method="post">
-                <input type="search" name="Search" placeholder="Search Keywords..." required="" />
-                <input type="submit" value="Search">
-            </form>
-
+            
         </div>
     </nav>
 </div>
