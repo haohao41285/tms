@@ -1,4 +1,4 @@
-<div class="header">
+{{-- <div class="header">
 		
     <div class="w3layouts_header_right">
         <div class="agileits-social top_content">
@@ -56,7 +56,7 @@
             </li>
         </ul>
     </div>
-</div>
+</div> --}}
 <div class="banner">
     <nav class="navbar navbar-default">
         <div class="navbar-header navbar-left">

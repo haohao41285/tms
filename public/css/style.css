@@ -454,7 +454,7 @@ nav.navbar.navbar-default {
 }
 .w3_agile_search{
 	float:right;
-	    width: 25%;
+	width: 35%;
 }
 .w3_agile_search input[type="search"] {
     
@@ -467,6 +467,7 @@ nav.navbar.navbar-default {
     color: #000;
     border: 1px solid #fff;
     letter-spacing: 1px;
+	border-bottom: .5px #47cf73 solid;
 }
 .w3_agile_search input[type="submit"] {
     background: #47cf73;
@@ -487,8 +488,8 @@ nav.navbar.navbar-default {
 .w3_agile_search  form {
     outline: none;
     margin: 0 auto;
-    padding:5px;
-    background: rgba(9, 52, 122, 0.08);
+    /* padding:5px; */
+    /* background: rgba(9, 52, 122, 0.08); */
 }
 
 /*-- gallery --*/
