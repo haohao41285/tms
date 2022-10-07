@@ -404,6 +404,7 @@ nav.navbar.navbar-default {
     color: #fff;
     background: #47cf73;
     padding: 0px 13px;
+	border-radius: 25px 0 25px 0;
 }
 .link-effect-2 a {
   overflow: hidden;
@@ -454,7 +455,7 @@ nav.navbar.navbar-default {
 }
 .w3_agile_search{
 	float:right;
-	width: 35%;
+	width: 20%;
 }
 .w3_agile_search input[type="search"] {
     

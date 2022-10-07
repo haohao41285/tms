@@ -4,9 +4,11 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Contact;
+use Illuminate\Support\Facades\App;
 
 class PageController extends Controller
 {
@@ -41,5 +43,17 @@ class PageController extends Controller
     public function qa(){
         $data['active'] = 'qa';
         return view('fe.pages.qa', $data);
+    }
+
+    /**
+     * Change locale, then redirect back
+     * @locale: vi/en
+     * @return back()
+     */
+    public function redirectLocale($locale, Request $request) {
+        App::setLocale($locale);
+        $request->session()->put('locale', $locale);
+        $link = $request->utm;
+        return redirect()->route($link);
     }
 }

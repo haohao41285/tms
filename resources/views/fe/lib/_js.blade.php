@@ -137,3 +137,5 @@
     });
 </script>
 <!-- //here ends scrolling icon -->
+
+<script src="{{ asset('js/custom.js') }}"></script>
