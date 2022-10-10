@@ -34,13 +34,13 @@
                 <div class="col-md-3 footer-agileits-w3layouts">
                     <h3>{{ __('fe.menu.contact-us') }}</h3>
                     <ul>
-                        <li>
+                        <li style="width: fit-content">
                             <a href="{{ route('fe.contact-us') }}" class="btn btn-contact">
                                 <i class="fa  fa-envelope-o"></i>
                                 {{ __('fe.menu.contact-us') }}
                             </a>
                         </li>
-                        <li class="dropdown" style="list-style-type: none">
+                        <li class="dropdown" style="list-style-type: none; margin-top: 1em">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 @if (app()->getLocale() == 'vi')
                                     <img style="width: 30px" src="{{asset('images/vn.svg')}}" alt="">
@@ -54,11 +54,11 @@
                                     <input type="hidden" id="hidden-token" value="{{ csrf_token() }}">
                                     
                                     @if (app()->getLocale() == 'vi')
-                                        <a href="{{ route('fe.redirect-locale', ['locale'=>'en','utm'=> request()->route()->getName()]) }}" class="flag-icon change-locale" data-locale="en" style="padding: 0px">
+                                        <a href="{{ route('fe.redirect-locale', ['locale'=>'en','utm'=> request()->route()->getName()]) }}" class="flag-icon change-locale" data-locale="en" style="padding: 0px; line-height: 0">
                                             <img style="width: 30px" src="{{asset('images/gb.svg')}}" alt="">
                                         </a>
                                     @else
-                                        <a href="{{ route('fe.redirect-locale',['locale'=>'vi','utm'=> request()->route()->getName()]) }}" class="flag-icon change-locale" data-locale="vi" style="padding: 0px;">
+                                        <a href="{{ route('fe.redirect-locale',['locale'=>'vi','utm'=> request()->route()->getName()]) }}" class="flag-icon change-locale" data-locale="vi" style="padding: 0px; line-height: 0">
                                             <img style="width: 30px" src="{{asset('images/vn.svg')}}" alt="">
                                         </a>
                                     @endif

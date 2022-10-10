@@ -49,9 +49,6 @@
         .panel-body{
             margin-left: 2em;
         }
-        .qa-content{
-            margin: 2em auto;
-        }
     </style>
 @endpush
 

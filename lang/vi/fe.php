@@ -26,12 +26,12 @@ return [
             'title3' => 'Quy trình làm việc <span>đơn giản</span>'
         ],
         'why' => [
-            'title' => 'Tại sao lại lựa chọn chúng tôi ?',
+            'title' => 'Tại sao lựa chọn chúng tôi ?',
             'description' => 'Với đội ngũ thành viên có thâm niên trong ngành thiết kế và vận hành web, với những ưu điểm trong Freelance:',
             'facts' => '<li><i class="fa fa-check" aria-hidden="true"></i> Chi phí xây dựng thấp hơn.</li>
             <li><i class="fa fa-check" aria-hidden="true"></i> Thời gian làm việc linh hoạt</li>
             <li><i class="fa fa-check" aria-hidden="true"></i> Quy trình làm việc tối giản</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i> ...</li>',
+            <li><i class="fa fa-check" aria-hidden="true"></i> Bảo hành trọn đời</li>',
         ],
         'project' => [
             'type' => 'Loại dự án',

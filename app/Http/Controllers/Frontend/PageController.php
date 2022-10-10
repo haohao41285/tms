@@ -49,6 +49,7 @@ class PageController extends Controller
         App::setLocale($locale);
         $request->session()->put('locale', $locale);
         $link = $request->utm;
+        if($link == '') $link = 'fe.home';
         return redirect()->route($link);
     }
 }

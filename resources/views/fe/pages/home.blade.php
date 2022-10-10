@@ -7,10 +7,10 @@
 @push('css')
     <style>
         .effect-1{
-            background-color: #80808073;
+            background-color: #ffffff94;
         }
         .w3ls-special-text h4{
-            color: #47cf73;
+            color: #192d10;
         }
         .flex-control-nav{
             left: 0;
@@ -44,17 +44,12 @@
                         <ul class="slides">
                             <li>
                                 <div class="agileits_w3layouts_banner_bottom_grid">
-                                    <img src="images/1.jpg" alt=" " class="img-responsive" />
+                                    <img src="{{ asset('images/flex-time.png') }}" alt=" " class="img-responsive" />
                                 </div>
                             </li>
                             <li>
                                 <div class="agileits_w3layouts_banner_bottom_grid">
-                                    <img src="images/2.jpg" alt=" " class="img-responsive" />
-                                </div>
-                            </li>
-                            <li>
-                                <div class="agileits_w3layouts_banner_bottom_grid">
-                                    <img src="images/3.jpg" alt=" " class="img-responsive" />
+                                    <img src="{{ asset('images/save-money.png') }}" alt=" " class="img-responsive" />
                                 </div>
                             </li>
                         </ul>
@@ -250,9 +245,9 @@
                 <li>
                     <div class="wthree_gallery_grid">
                             <div class="view second-effect">
-                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <img src="{{ asset('images/technology/jquery-home-black.png') }}" alt="" class="img-responsive" />
                                 <div class="overlay">
-                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
+                                    <img src="{{ asset('images/technology/jquery-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -327,9 +322,9 @@
                 <li>
                     <div class="wthree_gallery_grid">
                             <div class="view second-effect">
-                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <img src="{{ asset('images/technology/jquery-home-black.png') }}" alt="" class="img-responsive" />
                                 <div class="overlay">
-                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
+                                    <img src="{{ asset('images/technology/jquery-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -404,20 +399,9 @@
                 <li>
                     <div class="wthree_gallery_grid">
                             <div class="view second-effect">
-                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <img src="{{ asset('images/technology/jquery-home-black.png') }}" alt="" class="img-responsive" />
                                 <div class="overlay">
-                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="wthree_gallery_grid">
-                            <div class="view second-effect">
-                                <img src="{{ asset('images/technology/laravel-home-black.png') }}" alt="" class="img-responsive" />
-                                <div class="overlay">
-                                    <img src="{{ asset('images/technology/laravel-home.png') }}" alt="" class="img-responsive" />
+                                    <img src="{{ asset('images/technology/jquery-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>

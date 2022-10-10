@@ -1,14 +1,6 @@
 <script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/imask.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/dscountdown.min.js') }}"></script>
-<script>
-    jQuery(document).ready(function($) {
-        $('.demo2').dsCountDown({
-            endDate: new Date("December 24, 2020 23:59:00"),
-            theme: 'black'
-        });
-    });
-</script>
 
 <script src="{{ asset('js/mainScript.js') }}"></script>
 <script src="{{ asset('js/rgbSlide.min.js') }}"></script>
@@ -53,7 +45,7 @@
             autoPlay: true,
             autoPlaySpeed: 2000,
             pauseOnHover: true,
-            enableResponsiveBreakpoints: true,
+            enableResponsiveBreakpoints: false,
             responsiveBreakpoints: {
                 portrait: {
                     changePoint: 480,

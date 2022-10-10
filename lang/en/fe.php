@@ -32,7 +32,7 @@ return [
             'facts' => '<li><i class="fa fa-check" aria-hidden="true"></i> Low construction cost.</li>
             <li><i class="fa fa-check" aria-hidden="true"></i> Flexible working time</li>
             <li><i class="fa fa-check" aria-hidden="true"></i> Simplified workflow</li>
-            <li><i class="fa fa-check" aria-hidden="true"></i> ...</li>',
+            <li><i class="fa fa-check" aria-hidden="true"></i> Lifetime warranty<li>',
         ],
         'project' => [
             'type' => 'Project Type',

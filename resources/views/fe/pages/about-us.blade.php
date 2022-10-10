@@ -7,7 +7,7 @@
 @push('css')
 	<style>
 		.our-tech-icon{
-			width: 10em;
+			width: 6em;
 		}
 	</style>
 @endpush
@@ -67,7 +67,7 @@
 			</div>
 			<div class="agile_team_grids_top">
 				<div class="col-md-6 w3l_stats_bottom_grid_left">
-					<img src="{{ asset('images/3.jpg') }}" alt=" " class="img-responsive" />
+					<img style="width: 100%" src="{{ asset('images/3.jpg') }}" alt=" " class="img-responsive" />
 				</div>
 				<div class="col-md-6 w3l_stats_bottom_grid_right">
 
@@ -77,6 +77,7 @@
 					<img class="our-tech-icon" src="{{ asset('images/technology/cs-cart.png') }}" alt="">
 					<img class="our-tech-icon" src="{{ asset('images/technology/vuejs.png') }}" alt="">
 					<img class="our-tech-icon" src="{{ asset('images/technology/WordPress.png') }}" alt="">
+					<img class="our-tech-icon" src="{{ asset('images/technology/jquery.png') }}" alt="">
 
 					<p style="margin-top: 2em; font-style: italic;">"{{ __('fe.about-us.our-technology.more') }}"</p>
 					

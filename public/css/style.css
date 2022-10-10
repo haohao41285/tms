@@ -314,7 +314,7 @@ h3.agileinfo_sign  {
 .form-control:focus {
     border: 1px solid #ccc;
     outline: 0;
-	 box-shadow:none!important;
+	box-shadow:none!important;
 }
 /*-- //registration --*/
 /*-- //bootstrap-pop-up --*/
@@ -528,40 +528,39 @@ ul.some_agile_facts i {
 }
 /*--/middle--*/
 .w3ls-special-img.w3l-grid-1{
-    background:#000 url(../images/project/building.jpg) no-repeat 0px 0px;
-    min-height:400px;
+    background:#0070eac7  url(../images/project/building.jpg) no-repeat 0px 0px;
+    min-height:380px;
     background-size: cover;
     text-align: center;
     position: relative;	
 }
 .w3ls-special-img.w3l-grid-2{
-    background:#000 url(../images/project/e-commerce.png) no-repeat 0px 0px;
-   min-height:400px;
+    background:#0070eac7 url(../images/project/e-commerce.png) no-repeat 0px 0px;
+   min-height:380px;
     background-size: cover;
     text-align: center;
     position: relative;	
 }
 .w3ls-special-img.w3l-grid-3{
-    background:#000 url(../images/project/realtime.jpg) no-repeat 0px 0px;
-    min-height:400px;
+    background:#0070eac7 url(../images/project/realtime.jpg) no-repeat 0px 0px;
+    min-height:380px;
     background-size: cover;
     text-align: center;
     position: relative;	
 }
 .w3ls-special-text h4 {
-       color: #FFF;
+    color: #FFF;
     font-size: 2em;
-    margin: 4em 0 0 0;
+    margin: 5em 0 0 0;
     font-weight: 600;
     letter-spacing: 2px;
-    margin-bottom: 1em;
 }
 .w3ls-special-img {
     padding: 0;
 }
 .w3ls-special-text.effect-1 ul li {
     list-style: none;
-    color: #fff;
+    color: #48506b;
     letter-spacing: 1px;
     font-size: 1em;
     margin-bottom: 1em;
@@ -607,8 +606,8 @@ background: rgba(0, 0, 0, 0.17);
   opacity: 1;
 }
 .w3ls-special-img.text_info {
-    background: #000;
-    min-height: 399px;
+    background: #5a5c5e;
+    min-height: 380px;
 }
 .w3ls-special-img.text_info h4 {
     text-align: center;
@@ -769,16 +768,15 @@ h3.w3l_header.w3_agileits_header.two {
 
 }
 .agileits_w3layouts_banner_bottom_grid {
-background: #ececec;
-    padding: 0.5em 0.5em 0.5em 0;
-		    box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+	background: #ececec;
+	box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
     -webkit-box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
     -moz-box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
     -o-box-shadow: 0 0px 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
-	    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
-.banner-bottom,.gallery{
-    padding: 5em 0 0 0;
+.banner-bottom{
+    padding: 5em 0;
 }
 /*-- testimonials --*/
 .w3ls_testimonials_grids{
@@ -1113,8 +1111,8 @@ background: #ececec;
 /*-- //testimonials --*/
 /*-- footer --*/
 .footer_agile_w3ls{
-    background: #010713;
-	padding:4em 0;
+    background: #232323;
+	padding:4em 0 2em 0;
 }
 .footer_agile_w3ls h3 {
     color: #fff;
@@ -1125,8 +1123,8 @@ background: #ececec;
     font-weight: 600;
 }
 .footer_agile_w3ls li,.footer_agile_w3ls li a {
-      display: block;
-    color: #6a748a;
+    display: block;
+    color: #fff;
     font-size: 1em;
     line-height: 2em;
     text-transform: capitalize;
@@ -1376,12 +1374,12 @@ font-size: 2.5em;
 	padding-right:1em;
 }
 .w3ls_courses_left_grid p{
-	margin:2em 0 0;
+	margin:1em 0 0;
 	color:#999;
 	line-height:2em;
 }
 .w3ls_courses_left_grid{
-	padding-top:2em;
+	padding-top:1em;
 }
 .w3ls_courses_right p{
 	margin-bottom:2em !important;
@@ -1827,7 +1825,7 @@ font-size: 16px;
     color: #212121;
     outline: none;
     width: 100%;
-    min-height: 115px;
+    min-height: 100px;
     resize: none;
     margin: 0 0 2em 0;
     background: none;
@@ -2066,6 +2064,9 @@ h3.agileits-icons-title {
 	color: #fff!important;
 	animation: changeBackgroundColor 1s infinite;
 	-webkit-animation: changeBackgroundColor 1s infinite;
+	-moz-animation: changeBackgroundColor 1s infinite;
+	-o-animation: changeBackgroundColor 1s infinite;
+	margin-top: 1em;
 }
 @keyframes changeBackgroundColor {
 	from {background: #47cf73;}
@@ -2074,6 +2075,13 @@ h3.agileits-icons-title {
 @-webkit-keyframes changeBackgroundColor {
 	from {-webkit-background: #47cf73;}
 	to {-webkit-background: #4782cf;}
+}
+@-moz-keyframes changeBackgroundColor {
+	from {-moz-background: #47cf73;}
+	to {-moz-background: #4782cf;}
+}@-o-keyframes changeBackgroundColor {
+	from {-o-background: #47cf73;}
+	to {-o-background: #4782cf;}
 }
 .footer-w3-agileits .active{
 	color: #fff;
@@ -2087,6 +2095,10 @@ h3.agileits-icons-title {
 }
 #lang-box{
 	display: inline;
+}
+.qa-content{
+	margin: 2em auto;
+	min-height: 400px;
 }
 /*// Custom */
 @media (max-width:1080px){
@@ -3598,7 +3610,7 @@ h2.typoh2{
 		bottom: 6%;
 	}
 	.w3ls_banner_bottom_right {
-		width: 80%;
+		width: 100%;
 	}
 	.w3layouts_register_left {
 		margin: 2em 0 0;
