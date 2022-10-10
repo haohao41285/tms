@@ -1,7 +1,5 @@
-<!-- js -->
 <script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
-<!-- //js -->
-<!-- Counter required files -->
+<script type="text/javascript" src="{{asset('js/imask.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/dscountdown.min.js') }}"></script>
 <script>
     jQuery(document).ready(function($) {
@@ -11,9 +9,6 @@
         });
     });
 </script>
-<!-- //Counter required files -->
-
-
 
 <script src="{{ asset('js/mainScript.js') }}"></script>
 <script src="{{ asset('js/rgbSlide.min.js') }}"></script>
@@ -52,25 +47,25 @@
 <!-- flexisel -->
 <script type="text/javascript">
     $(window).load(function() {
-        $("#flexiselDemo1").flexisel({
-            visibleItems: 4,
-            animationSpeed: 1000,
+        $("#flexisel-technology").flexisel({
+            visibleItems: 10,
+            animationSpeed: 500,
             autoPlay: true,
-            autoPlaySpeed: 3000,
+            autoPlaySpeed: 2000,
             pauseOnHover: true,
             enableResponsiveBreakpoints: true,
             responsiveBreakpoints: {
                 portrait: {
                     changePoint: 480,
-                    visibleItems: 1
+                    visibleItems: 4
                 },
                 landscape: {
                     changePoint: 640,
-                    visibleItems: 2
+                    visibleItems: 5
                 },
                 tablet: {
                     changePoint: 768,
-                    visibleItems: 2
+                    visibleItems: 5
                 }
             }
         });
@@ -136,6 +131,5 @@
 
     });
 </script>
-<!-- //here ends scrolling icon -->
 
 <script src="{{ asset('js/custom.js') }}"></script>

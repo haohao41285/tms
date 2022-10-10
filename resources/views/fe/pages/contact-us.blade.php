@@ -1,7 +1,7 @@
 @extends('fe.pages.master')
 
 @section('title')
-    Contact us
+    {{__('fe.menu.contact-us')}}
 @endsection
 
 @push('css')
@@ -38,23 +38,23 @@
 @endpush
 
 @section('content')
-    @include('fe.partials._banner-small', ['title' => 'Contact Us'])
+    @include('fe.partials._banner-small', ['title' =>  __('fe.menu.contact-us') ])
 
     <div class="team">
         <div class="container">
-            <p class="sub_para_agile">If you have any questions, please feel free to contact us</p>
+            <p class="sub_para_agile">{{ __('fe.contact.title') }}</p>
             <div class="agile_team_grids_top" style="display: flex">
                 <div class="col-md-6 agileinfo_mail_grid_left" style="margin: auto">
 
                     @if(session()->has('success'))
-                        <p class="text-success text-center">{{session('success')}}</p>
+                        <p class="text-center" style="color: #47cf73"><u>{{session('success')}}</u></p>
                     @endif
 
                     <form action="{{ route('fe.contact-us.post') }}" method="post">
                         @csrf
 
                         <div class="form-group">
-                            <label class="required" for="name">Your name:</label>
+                            <label class="required" for="name">{{ __('fe.contact.your-name') }}:</label>
                             <input type="text" class="form-control" id="name" value="{{ old('name') }}" name="name" required>
                         </div>
                         @error('name')
@@ -62,34 +62,35 @@
                         @enderror
 
                         <div class="form-group">
-                          <label class="required" for="email">Your email:</label>
+                          <label class="required" for="email">{{ __('fe.contact.your-email') }}:</label>
                           <input type="email" class="form-control" id="email" value="{{ old('email') }}" name="email" required>
                         </div>
                         @error('email')
                             <small class="error-text">{{ $message }}</small>
                         @enderror
-
+                        
                         <div class="form-group">
-                          <label class="required" for="subject">Your subject:</label>
-                          <select class="form-control" id="subject" name="subject">
-                            <option @if(old('subject') == 1) selected @endif value="1">Design Website</option>
-                            <option @if(old('subject') == 2) selected @endif value="2">Advertising Campaign</option>
-                            <option @if(old('subject') == 3) selected @endif value="3">Other</option>
-                          </select>
+                            <label class="" for="phone">{{ __('fe.contact.your-phone') }}:</label>
+                            <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" name="phone">
                         </div>
-                        @error('subject')
-                            <small class="error-text">{{ $message }}</small>
-                        @enderror
-
+                          @error('phone')
+                              <small class="error-text">{{ $message }}</small>
+                          @enderror
+  
                         <div class="from-group">
-                            <label for="message" class="required">Your message:</label>
+                            <label for="message" class="required">{{ __('fe.contact.your-message') }}:</label>
                             <textarea name="message" id="" class="form-control" rows="2" required>{{ old('message') }}</textarea>
                         </div>
                         @error('message')
                             <small class="error-text">{{ $message }}</small>
                         @enderror
 
-                        <input type="submit" value="Send">
+                        <div class="g-recaptcha" data-sitekey="{{ ENV('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                        @error('g-recaptcha-response')
+                            <small class="error-text">{{ $message }}</small>
+                        @enderror
+
+                        <input style="margin-top: 10px" type="submit" value="{{ __('fe.contact.send-button') }}">
                     </form>
                     
                 </div>
@@ -98,3 +99,28 @@
         </div>
     </div>
 @endsection
+
+@push('js')
+
+    <script src="https://www.google.com/recaptcha/api.js?hl={{ app()->getLocale() }}" async defer></script>
+
+    <script>
+        var PhoneInputs = document.querySelectorAll('[name=phone]');
+        var phoneBeginning = '0 (';
+        var phoneMask = {
+            mask: '000-000-0000',
+        };
+
+        var phoneValidationSetup = function (phoneInputs, inputMask) {
+            phoneInputs.forEach(function (phoneInput) {
+                var cellularPhone = IMask(phoneInput, inputMask);
+                phoneInput.addEventListener('focus', function () {
+                    if (cellularPhone.value === '') {
+                        cellularPhone.value = phoneBeginning;
+                    }
+                });
+            });
+        };
+        phoneValidationSetup(PhoneInputs, phoneMask);
+    </script>
+@endpush

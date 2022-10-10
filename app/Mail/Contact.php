@@ -29,7 +29,7 @@ class Contact extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->data['subject'])
+        return $this->subject('CONTACT FROM SPITECH')
             ->markdown('emails.contact');
     }
 }

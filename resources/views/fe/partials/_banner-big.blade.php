@@ -1,5 +1,5 @@
 <div id="exampleSlider">
-    <div><h3>Banks are one thing you <span>can never bank upon.</span></h3></div>
-    <div><h3>Personal Finance service <span>& Home Banking</span></h3></div>
-     <div><h3>Banks are one thing you <span>can never bank upon.</span></h3></div>
+    <div><h3>{!! __('fe.home.banner.title1') !!}</h3></div>
+    <div><h3>{!! __('fe.home.banner.title3') !!}</h3></div>
+    <div><h3>{!! __('fe.home.banner.title2') !!}</h3></div>
 </div>

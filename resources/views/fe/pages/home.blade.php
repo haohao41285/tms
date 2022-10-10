@@ -1,28 +1,41 @@
 @extends('fe.pages.master')
 
+@section('title')
+    {{__('fe.menu.home')}}
+@endsection
+
+@push('css')
+    <style>
+        .effect-1{
+            background-color: #80808073;
+        }
+        .w3ls-special-text h4{
+            color: #47cf73;
+        }
+        .flex-control-nav{
+            left: 0;
+        }
+    </style>
+@endpush
+
 @section('content')
 
-    {{-- Big banner --}}
     @include('fe.partials._banner-big')
-    {{-- End big banner --}}
 
-    <!-- banner-bottom -->
     <div class="banner-bottom">
         <div class="container">
             <div class="col-md-6 w3ls_banner_bottom_left">
                 <div class="w3ls_banner_bottom_right1">
-                    <h2>Find Loan Products We Offers</h2>
-                    <p>Pellentesque convallis diam consequat magna vulputate malesuada.
-                        Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.</p>
-                    <p>Lorem Ipsum convallis diam consequat magna vulputate malesuada.
-                        Cras a ornare elit. Nulla viverra pharetra sem, eget pulvinar neque pharetra ac.</p>
+                    <h2>{{ __('fe.home.why.title') }}</h2>
+                    <p>{{ __('fe.home.why.description') }}</p>
                     <ul class="some_agile_facts">
-                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Home Loan.</li>
-                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Personal Loan</li>
-                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i> Education Loan</li>
-                        <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>Car Loan</li>
+                        {!! __('fe.home.why.facts') !!}
                     </ul>
                 </div>
+                <a href="{{ route('fe.contact-us') }}" class="btn btn-contact">
+                    <i class="fa  fa-envelope-o"></i>
+                    {{ __('fe.menu.contact-us') }}
+                </a>
                 <div class="clearfix"> </div>
             </div>
             <div class="col-md-6 w3ls_banner_bottom_right">
@@ -51,49 +64,42 @@
             <div class="clearfix"> </div>
         </div>
     </div>
-    <!-- //banner-bottom -->
-    <!-- middle -->
+
     <div class="middle-w3l">
         <div class="col-md-3 w3ls-special-img text_info">
-            <h4>Recent Projects</h4>
+            <h4>{{ __('fe.home.project.type') }}</h4>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-1">
             <div class="w3ls-special-text effect-1">
-                <h4>Project 1</h4>
+                <h4>{{ __('fe.home.project.type1.name') }}</h4>
                 <ul>
-                    <li>Secured </li>
-                    <li>Transaction</li>
-
+                    <li>{{ __('fe.home.project.type1.description') }}</li>
                 </ul>
             </div>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-2">
             <div class="w3ls-special-text effect-1">
-                <h4>Project 2</h4>
+                <h4>{{ __('fe.home.project.type2.name') }}</h4>
                 <ul>
-                    <li>Financial </li>
-                    <li>Planning </li>
-
+                    <li>{{ __('fe.home.project.type2.description') }}</li>
                 </ul>
             </div>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-3">
             <div class="w3ls-special-text effect-1">
-                <h4>Project 3</h4>
+                <h4>{{ __('fe.home.project.type3.name') }}</h4>
                 <ul>
-                    <li>Secured </li>
-                    <li>Transaction</li>
-
+                    <li>{{ __('fe.home.project.type3.description') }}</li>
                 </ul>
             </div>
         </div>
         <div class="clearfix"> </div>
     </div>
-    <!-- //middle -->
+
     <div class="testimonials">
         <div class="container">
-            <h3 class="w3l_header w3_agileits_header">Q&A</h3>
-            <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
+            <h3 class="w3l_header w3_agileits_header">{{ __('fe.menu.faqs') }}</h3>
+            <p class="sub_para_agile">{{ __('fe.faqs.title') }}</p>
             <div class="agile_team_grids_top">
                 <div class="col-md-4 w3_agile_services_grid">
                     <div class="agile_services_grid1 wthree_services_grid1">
@@ -143,7 +149,7 @@
             </div>
         </div>
     </div>
-    <!-- bootstrap-pop-up -->
+
     <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -169,20 +175,18 @@
             </div>
         </div>
     </div>
-    <!-- //bootstrap-pop-up -->
-    <!-- gallery -->
+    
     <div class="gallery">
-        <h3 class="w3l_header w3_agileits_header">Latest <span>Gallery</span></h3>
-        <p class="sub_para_agile">Ipsum dolor sit amet consectetur adipisicing elit</p>
+        <h3 class="w3l_header w3_agileits_header">{{ __('fe.home.technology.title') }}</h3>
+        <p class="sub_para_agile">{{ __('fe.home.technology.description') }}</p>
         <div class="agile_team_grids_top">
-            <ul id="flexiselDemo1">
+            <ul id="flexisel-technology">
                 <li>
                     <div class="wthree_gallery_grid">
-                        <a href="images/g1.jpg" class="lsb-preview" data-lsb-group="header">
                             <div class="view second-effect">
-                                <img src="images/g1.jpg" alt="" class="img-responsive" />
-                                <div class="mask">
-                                    <p>Funding</p>
+                                <img src="{{ asset('images/technology/laravel-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/laravel-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -190,11 +194,10 @@
                 </li>
                 <li>
                     <div class="wthree_gallery_grid">
-                        <a href="images/g2.jpg" class="lsb-preview" data-lsb-group="header">
                             <div class="view second-effect">
-                                <img src="images/g2.jpg" alt="" class="img-responsive" />
-                                <div class="mask">
-                                    <p>Funding</p>
+                                <img src="{{ asset('images/technology/bootstrap-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/bootstrap-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -202,11 +205,10 @@
                 </li>
                 <li>
                     <div class="wthree_gallery_grid">
-                        <a href="images/g3.jpg" class="lsb-preview" data-lsb-group="header">
                             <div class="view second-effect">
-                                <img src="images/g3.jpg" alt="" class="img-responsive" />
-                                <div class="mask">
-                                    <p>Funding</p>
+                                <img src="{{ asset('images/technology/WordPress-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/WordPress-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -214,11 +216,10 @@
                 </li>
                 <li>
                     <div class="wthree_gallery_grid">
-                        <a href="images/g4.jpg" class="lsb-preview" data-lsb-group="header">
                             <div class="view second-effect">
-                                <img src="images/g4.jpg" alt="" class="img-responsive" />
-                                <div class="mask">
-                                    <p>Funding</p>
+                                <img src="{{ asset('images/technology/cs-cart-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/cs-cart-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -226,11 +227,197 @@
                 </li>
                 <li>
                     <div class="wthree_gallery_grid">
-                        <a href="images/g5.jpg" class="lsb-preview" data-lsb-group="header">
                             <div class="view second-effect">
-                                <img src="images/g5.jpg" alt="" class="img-responsive" />
-                                <div class="mask">
-                                    <p>Funding</p>
+                                <img src="{{ asset('images/technology/vuejs-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/vuejs-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/php-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/php-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/laravel-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/laravel-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/bootstrap-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/bootstrap-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/WordPress-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/WordPress-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/cs-cart-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/cs-cart-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/vuejs-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/vuejs-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/php-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/php-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/laravel-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/laravel-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/bootstrap-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/bootstrap-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/WordPress-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/WordPress-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/cs-cart-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/cs-cart-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/vuejs-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/vuejs-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/php-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/php-home.png') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/jquery-home-black.jpeg') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/jquery-home.jpeg') }}" alt="" class="img-responsive" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="wthree_gallery_grid">
+                            <div class="view second-effect">
+                                <img src="{{ asset('images/technology/laravel-home-black.png') }}" alt="" class="img-responsive" />
+                                <div class="overlay">
+                                    <img src="{{ asset('images/technology/laravel-home.png') }}" alt="" class="img-responsive" />
                                 </div>
                             </div>
                         </a>
@@ -242,5 +429,4 @@
 @endsection
 
 @push('js')
-    <script src="{{ asset('js/demo-1.js') }}"></script>
 @endpush

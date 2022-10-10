@@ -29,14 +29,9 @@ class PageController extends Controller
     
     public function contactUsPost(ContactRequest $request){
         $data = $request->all();
-        $email = $data['email'];
 
-        if ($data['subject'] == 1) $data['subject'] = 'Contact - Design Website';
-        elseif ($data['subject'] == 2) $data['subject'] = 'Contact - Advertising';
-        else $data['subject'] = 'Contact - Other';
-        
-        Mail::to($email)->send(new Contact($data));
-        return back()->with('success', 'Thanks for contact us');
+        Mail::to(ENV('MAIL_OWN'))->send(new Contact($data));
+        return back()->with('success', __('fe.contact.sent-success'));
         
     }
     

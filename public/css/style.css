@@ -1,22 +1,16 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html, body{
     font-size: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	background:#ffffff;
 	margin: 0;
 }
 p,ul li,ol li,body a{
 	margin:0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 	letter-spacing:1px;
 }
 h1,h2,h3,h4,h5,h6{
-font-family: 'Roboto', sans-serif;
+font-family: 'Nunito', sans-serif;
 	margin:0;
 	letter-spacing:1px;
 }
@@ -33,7 +27,7 @@ input[type="submit"],input[type="reset"],input[type="search"],input[type="text"]
     -ms-transition: 0.5s ease-in;
     -o-transition: 0.5s ease-in;
     transition:0.5s ease-in;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 /*-- header --*/
 .w3layouts_header_left {
@@ -325,14 +319,20 @@ h3.agileinfo_sign  {
 /*-- //registration --*/
 /*-- //bootstrap-pop-up --*/
 /*-- banner --*/
+.banner{
+	padding: 4px 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+}
 .banner1{
-    background: url(../images/banner2.jpg) no-repeat 0px 0px;
+    background: url(../images/banner4.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 150px;
+    min-height: 160px;
 }
 /*-- nav --*/
 .navbar-default {
@@ -355,7 +355,7 @@ h3.agileinfo_sign  {
 .navbar-default .navbar-nav > li > a {
     /* font-weight:600;
     letter-spacing: 1px; */
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
     font-size: 1em;
 }
 .navbar-nav > li > a {
@@ -383,14 +383,14 @@ nav.navbar.navbar-default {
     background: none;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #222;
+    color: #fff;
 }
 .navbar-default .navbar-nav  > .active.open > a:focus {
 	background:transparent;
 	color: #222;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #222;
+    color: #fff;
 }
 .navbar-brand {
     height: 42px;
@@ -417,6 +417,7 @@ nav.navbar.navbar-default {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-weight: bold;
 }
 .link-effect-2 a span::before {
   color:#47cf73;
@@ -527,21 +528,21 @@ ul.some_agile_facts i {
 }
 /*--/middle--*/
 .w3ls-special-img.w3l-grid-1{
-    background:#000 url(../images/g1.jpg) no-repeat 0px 0px;
+    background:#000 url(../images/project/building.jpg) no-repeat 0px 0px;
     min-height:400px;
     background-size: cover;
     text-align: center;
     position: relative;	
 }
 .w3ls-special-img.w3l-grid-2{
-    background:#000 url(../images/g2.jpg) no-repeat 0px 0px;
+    background:#000 url(../images/project/e-commerce.png) no-repeat 0px 0px;
    min-height:400px;
     background-size: cover;
     text-align: center;
     position: relative;	
 }
 .w3ls-special-img.w3l-grid-3{
-    background:#000 url(../images/g3.jpg) no-repeat 0px 0px;
+    background:#000 url(../images/project/realtime.jpg) no-repeat 0px 0px;
     min-height:400px;
     background-size: cover;
     text-align: center;
@@ -623,7 +624,7 @@ background: rgba(0, 0, 0, 0.17);
 	background:#222227;
 	padding: 70px 0 165px 0;
 }
-#flexiselDemo1 {
+#flexisel-technology {
 	display: none;
 }
 .nbs-flexisel-container {
@@ -673,6 +674,12 @@ background: rgba(0, 0, 0, 0.17);
     background:none;
 }
 /*--//flexisel--*/
+.overlay{
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	transition: opacity .5s;
+}
 .view {
     overflow: hidden;
     position: relative;
@@ -688,9 +695,13 @@ background: rgba(0, 0, 0, 0.17);
    top: 0;
    left: 0;
 }
-.view img {
+.view>img {
    display: block;
    position: relative;
+}
+.view img{
+	width: 70%;
+	margin: auto;
 }
 /* SECOND EFFECTS */
 
@@ -710,10 +721,8 @@ background: rgba(0, 0, 0, 0.17);
    transition: all 0.4s ease-in-out;
    text-align:center;
 }
-.second-effect:hover .mask {
+.second-effect:hover .overlay {
 	opacity: 1;
-    border: 95px solid rgba(255, 255, 255, 0.7);
-    background: rgba(0, 0, 0, 0.45);
 }
 .second-effect .mask p {
     font-size: 1.5em;
@@ -1336,7 +1345,7 @@ button.close {
 }
 /*-- courses --*/
 .wthree_banner1_info {
-    padding: 4em 0 0;
+    padding: 5em 0 0;
     text-align: center;
 }
 .wthree_banner1_info h3{
@@ -1826,7 +1835,7 @@ font-size: 16px;
     border-bottom: 3px solid #e3e3e3;
     padding: 1em .3em;
     font-weight: 600;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', sans-serif;
 }
 .agileinfo_mail_grid_left textarea::-webkit-input-placeholder{
 	color:#666!important;
@@ -2051,6 +2060,35 @@ h3.agileits-icons-title {
     text-align: center;
     word-wrap: break-word;
 }
+
+/* Custom */
+.btn-contact {
+	color: #fff!important;
+	animation: changeBackgroundColor 1s infinite;
+	-webkit-animation: changeBackgroundColor 1s infinite;
+}
+@keyframes changeBackgroundColor {
+	from {background: #47cf73;}
+	to {background: #4782cf;}
+}
+@-webkit-keyframes changeBackgroundColor {
+	from {-webkit-background: #47cf73;}
+	to {-webkit-background: #4782cf;}
+}
+.footer-w3-agileits .active{
+	color: #fff;
+	text-decoration: underline;
+}
+#sliderRight, #sliderLeft{
+	display: none;
+}
+#lang-box-mobile{
+	display: none;
+}
+#lang-box{
+	display: inline;
+}
+/*// Custom */
 @media (max-width:1080px){
 	.icon-box {
 		width: 33.33%;
@@ -2080,6 +2118,12 @@ h3.agileits-icons-title {
 	}
 	.icon-box {
 		margin: 0;
+	}
+	#lang-box{
+		display: none;
+	}
+	#lang-box-mobile{
+		display: inline;
 	}
 }
 @media (max-width:736px){

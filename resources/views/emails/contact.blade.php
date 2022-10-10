@@ -2,6 +2,7 @@
 
 Customer Name: <b>{{$data['name']}}</b><br>
 Customer Email: <b>{{$data['email']}}</b><br>
+Customer Phone: <b>{{$data['phone']}}</b><br>
 Customer Message: <b>{{$data['message']}}</b><br>
 Time Contact: {{now()}}
 
