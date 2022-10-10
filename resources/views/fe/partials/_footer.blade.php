@@ -47,7 +47,6 @@
                                 @else
                                     <img style="width: 30px" src="{{asset('images/gb.svg')}}" alt="">
                                 @endif
-                                <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu agile_short_dropdown" style="min-width: auto">
                                 <li>

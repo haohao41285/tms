@@ -6,9 +6,7 @@
 
 @push('css')
 	<style>
-		.our-tech-icon{
-			width: 6em;
-		}
+		
 	</style>
 @endpush
 

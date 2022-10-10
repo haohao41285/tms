@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <ul class="link-effect-2" style="float: right; margin-top: 10px" id="lang-box-mobile">
+            <ul class="link-effect-2" style="float: right; margin-top: 10px;margin-right: 1em" id="lang-box-mobile">
                 <li class="dropdown" style="list-style-type: none">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         @if (app()->getLocale() == 'vi')
@@ -15,7 +15,6 @@
                         @else
                             <img style="width: 30px" src="{{asset('images/gb.svg')}}" alt="">
                         @endif
-                        <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu agile_short_dropdown" style="min-width: auto">
                         <li>
@@ -73,7 +72,6 @@
                         @else
                             <img style="width: 30px" src="{{asset('images/gb.svg')}}" alt="">
                         @endif
-                        <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu agile_short_dropdown" style="min-width: auto">
                         <li>

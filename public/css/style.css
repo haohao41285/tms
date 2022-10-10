@@ -2100,6 +2100,9 @@ h3.agileits-icons-title {
 	margin: 2em auto;
 	min-height: 400px;
 }
+.our-tech-icon{
+	width: 6em;
+}
 /*// Custom */
 @media (max-width:1080px){
 	.icon-box {
@@ -2136,6 +2139,10 @@ h3.agileits-icons-title {
 	}
 	#lang-box-mobile{
 		display: inline;
+	}
+	.our-tech-icon{
+		width: 2em;
+		margin: 5px;
 	}
 }
 @media (max-width:736px){
@@ -2765,6 +2772,7 @@ h2.typoh2{
 	}
 	.agileits_courses_right {
 		margin: 2em 0 0;
+		padding: 0;
 	}
 	.w3layouts_stats_left {
 		float: left;
@@ -3005,7 +3013,7 @@ h2.typoh2{
 	}
 	.navbar-nav {
 		margin: 0;
-		background:rgba(0, 0, 0, 0.85);
+		background:#232323;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border: none;
@@ -3043,6 +3051,8 @@ h2.typoh2{
 	}
 	.navbar-default .navbar-nav > li > a {
 		color: #fff!important;
+		text-align: left;
+		padding-left: 2em;
 	}
 	.w3_agile_search {
 		float: right;
@@ -3517,6 +3527,7 @@ h2.typoh2{
 	.w3_agile_services_grid {
 		float: none;
 		width: 100%;
+		padding: 0;
 	}
 	.agileits_w3layouts_services_grid1 h4 a {
 		font-size: 1.1em;
@@ -3525,8 +3536,7 @@ h2.typoh2{
 		width: 80%;
 	}
 	.agileinfo_mail_grid_left textarea {
-		min-height: 150px;
-		margin: 2em 0;
+		min-height: 100px;
 	}
 	.agileinfo_mail_social_rightl a, .agileinfo_mail_social_rightr a, .agileinfo_mail_social_right_social a {
 		padding: 2em;
@@ -3538,7 +3548,8 @@ h2.typoh2{
 		font-size: 1.5em;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-		width: 93%;
+		width: 100%;
+		left: 0;
 	}
 	.sub_para_agile {
       font-size: 0.85em;
@@ -3557,7 +3568,7 @@ h2.typoh2{
 		min-height: 132px;
 	}
 	.wthree_banner1_info {
-		padding: 3.5em 0 0;
+		padding: 5em 0 0;
 	}
 	.w3ls-special-img.text_info {
 		min-height: 200px;
@@ -3611,6 +3622,7 @@ h2.typoh2{
 	}
 	.w3ls_banner_bottom_right {
 		width: 100%;
+		padding: 0;
 	}
 	.w3layouts_register_left {
 		margin: 2em 0 0;
@@ -3731,7 +3743,8 @@ h2.typoh2{
 		font-size: 1.2em;
 	}
 	.w3l_stats_bottom_grid_left {
-		width: 80%;
+		width: 100%;
+		padding: 0;
 	}
 	.w3ls_bar_group__bar_pos p {
 		font-size: 13px;
