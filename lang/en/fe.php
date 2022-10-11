@@ -130,19 +130,19 @@ return [
     'seo' => [
         'home' => [
             'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
-            'description' => 'Freelance website design according to customer needs SPITech'
+            'description' => 'Freelance website design according to customer needs '
         ],
         'about-us' => [
             'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
-            'description' => 'With senior members in professional design and website operation, we will bring quality products to customers SPITech'
+            'description' => 'With senior members in professional design and website operation, we will bring quality products to customers '
         ],
         'faqs' => [
             'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
-            'description' => 'Frequently asked questions when making a website SPITech'
+            'description' => 'Frequently asked questions when making a website '
         ],
         'contact-us' => [
             'keywords' => 'contact website design, contact web design, contact website design, contact cheap web, contact web freelance, contact web freelance',
-            'description' => 'contact us SPITech'
+            'description' => 'contact us '
         ],
     ],
     'validate' => [

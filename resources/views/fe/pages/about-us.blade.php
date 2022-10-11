@@ -5,8 +5,8 @@
 @endsection
 
 @push('meta_seo')
-    <meta name="keywords" content="{{ __('fe.seo.about-us.keywords') }}" />
-    <meta name="description" content="{{ __('fe.seo.about-us.description') }}" />
+    <meta name="keywords" content="{{ __('fe.seo.about-us.keywords') ." - ". ENV('APP_NAME') }}" />
+    <meta name="description" content="{{ __('fe.seo.about-us.description') ." - ". ENV('APP_NAME') }}" />
 @endpush
 
 @push('css')

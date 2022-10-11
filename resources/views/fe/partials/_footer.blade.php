@@ -4,7 +4,7 @@
         <div class="agileits_w3layouts_footer_grids">
             <div class="row">
                 <div class="col-md-3 footer-w3-agileits">
-                    <a href="{{ route('fe.home') }}"><h3>Spi Tech</h3></a>
+                    <a href="{{ route('fe.home') }}"><h3>Suplo Tech</h3></a>
                     <ul>
                         <li>
                             <a class="{{ $active && $active == 'home' ? 'active' : '' }}" href="{{ route('fe.home') }}">{{ __('fe.menu.home') }}</a>

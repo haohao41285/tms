@@ -130,19 +130,19 @@ return [
     'seo' => [
         'home' => [
             'keywords' => 'thiết kế website, thiết kế web, thiết kế trang web, web giá rẻ, web freelance, thuê làm web freelance',
-            'description' => 'Thiết kế website freelance theo nhu cầu của khách hàng SPITech'
+            'description' => 'Thiết kế website freelance theo nhu cầu của khách hàng '
         ],
         'about-us' => [
             'keywords' => 'thiết kế website, thiết kế web, thiết kế trang web, web giá rẻ, web freelance, thuê làm web freelance',
-            'description' => 'Với những thành viên có thâm niên trong nghề thiết kế và vận hành website sẽ mang lại những sản phẩm chất lượng cho khách hàng SPITech'
+            'description' => 'Với những thành viên có thâm niên trong nghề thiết kế và vận hành website sẽ mang lại những sản phẩm chất lượng cho khách hàng '
         ],
         'faqs' => [
             'keywords' => 'thiết kế website, thiết kế web, thiết kế trang web, web giá rẻ, web freelance, thuê làm web freelance',
-            'description' => 'Những câu hỏi thông thường khi xây dựng website SPITech'
+            'description' => 'Những câu hỏi thông thường khi xây dựng website '
         ],
         'contact-us' => [
             'keywords' => 'liên hệ thiết kế website, liên hệ thiết kế web, liên hệ thiết kế trang web, liên hệ web giá rẻ, liên hệ web freelance, liên hệ thuê làm web freelance',
-            'description' => 'liên hệ với chúng tôi SPITech'
+            'description' => 'liên hệ với chúng tôi '
         ],
     ],
     'validate' => [
