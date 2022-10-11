@@ -47,7 +47,7 @@
 
     <div class="team">
         <div class="container">
-            <p class="sub_para_agile">{{ __('fe.contact.title') }}</p>
+            <p class="sub_para_agile" data-aos="fade-up" data-aos-duration="1000">{{ __('fe.contact.title') }}</p>
             <div class="agile_team_grids_top" style="display: flex">
                 <div class="col-md-6 agileinfo_mail_grid_left" style="margin: auto">
 
@@ -58,7 +58,7 @@
                     <form action="{{ route('fe.contact-us.post') }}" method="post">
                         @csrf
 
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-left" data-aos-duration="1000">
                             <label class="required" for="name">{{ __('fe.contact.your-name') }}:</label>
                             <input type="text" class="form-control" id="name" value="{{ old('name') }}" name="name" required>
                         </div>
@@ -66,7 +66,7 @@
                             <small class="error-text">{{ $message }}</small>
                         @enderror
 
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-right" data-aos-duration="1500">
                           <label class="required" for="email">{{ __('fe.contact.your-email') }}:</label>
                           <input type="email" class="form-control" id="email" value="{{ old('email') }}" name="email" required>
                         </div>
@@ -74,7 +74,7 @@
                             <small class="error-text">{{ $message }}</small>
                         @enderror
                         
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-left" data-aos-duration="2000">
                             <label class="" for="phone">{{ __('fe.contact.your-phone') }}:</label>
                             <input type="text" class="form-control" id="phone" value="{{ old('phone') }}" name="phone">
                         </div>
@@ -82,7 +82,7 @@
                               <small class="error-text">{{ $message }}</small>
                           @enderror
   
-                        <div class="from-group">
+                        <div class="from-group" data-aos="fade-right" data-aos-duration="2500">
                             <label for="message" class="required">{{ __('fe.contact.your-message') }}:</label>
                             <textarea name="message" id="" class="form-control" rows="2" required>{{ old('message') }}</textarea>
                         </div>
@@ -90,12 +90,12 @@
                             <small class="error-text">{{ $message }}</small>
                         @enderror
 
-                        <div class="g-recaptcha" data-sitekey="{{ ENV('GOOGLE_RECAPTCHA_KEY') }}"></div>
+                        <div class="g-recaptcha" data-sitekey="{{ ENV('GOOGLE_RECAPTCHA_KEY') }}" data-aos="fade-left" data-aos-duration="3000"></div>
                         @error('g-recaptcha-response')
                             <small class="error-text">{{ $message }}</small>
                         @enderror
 
-                        <input style="margin-top: 10px" type="submit" value="{{ __('fe.contact.send-button') }}">
+                        <input style="margin-top: 10px" type="submit" value="{{ __('fe.contact.send-button') }}" data-aos="fade-right" data-aos-duration="3000">
                     </form>
                     
                 </div>

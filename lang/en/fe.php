@@ -81,7 +81,7 @@ return [
     ],
     'faqs' => [
         'title' => 'Some frequently asked questions',
-        'title-space' => '<p class="faq-title">Some</p><p class="faq-title">frequently</p><p class="faq-title">asked</p><p class="faq-title">questions</p>',
+        'title-space' => '<p class="faq-title"><span class="first-word">F</span>requently</p><p class="faq-title"><span class="first-word">a</span>sked</p><p class="faq-title"><span class="first-word">q</span>uestions</p>',
         'websites' => [
             'title' => 'Websites',
             'qa1' => [
@@ -108,7 +108,7 @@ return [
             'qa3' => [
                 'question' => 'How to contact?',
                 'slug' => 'how-to-contact',
-                'answer' => 'You can easily contact us through the contact form <a href="/lien-he">Contact</a>'
+                'answer' => 'You can easily contact us through the form <a href="/lien-he">Contact now</a>'
             ],
             'qa4' => [
                 'question' => 'Benefits of building a website?',
@@ -116,14 +116,14 @@ return [
                 'answer' => 'Building a website is like building a house on the Internet, helping users and customers easily find, easily contact, update information quickly, strengthen trust in your store, business. At the same time, it also helps store, businesses, .. easily promote products to customers, easily approach potential customers.'
             ],
             'qa5' => [
-                'question' => 'Is the website speed fast?',
+                'question' => 'Is the website <b>speed fast</b>?',
                 'slug' => 'is-the-website-speed-fast',
-                'answer' => 'Website speed depends on many factors such as: internet connection speed, bandwidth of provider server, access device. As for the product side, <a href="/"/><b>SPI Tech</b></a> always tries to optimize the command to bring the best quality for the product.'
+                'answer' => 'Website speed depends on many factors such as: internet connection speed, bandwidth of provider server, access device. As for the product side, <a href="/"/><b>SUPLO Tek</b></a> always tries to optimize the command to bring the best quality for the product.'
             ],
             'qa6' => [
-                'question' => 'Does the website have SEO standards?',
+                'question' => 'Does the website have <b>SEO</b> standards?',
                 'slug' => 'does-the-website-have-seo-standards',
-                'answer' => "<a href='/'/><b>SPI Tech</b></a> always updates GOOGLE's latest algorithm applied to the product to bring the earliest effect without the impact of any influence other move"
+                'answer' => "<a href='/'/><b>SUPLO Tek</b></a> always updates GOOGLE's latest algorithm applied to the product to bring the earliest effect without the impact of any influence other move"
             ],
         ]
     ],

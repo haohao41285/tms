@@ -3,7 +3,7 @@ return [
     'menu' => [
         'home' => 'Trang Chủ',
         'about-us' => 'Về chúng tôi',
-        'faqs' => 'Hỏi & đáp',
+        'faqs' => 'Faqs',
         'contact-us' => 'Liên hệ'
     ],
     'page' => [
@@ -80,7 +80,7 @@ return [
     ],
     'faqs' => [
         'title' => 'Một số câu hỏi thường gặp',
-        'title-space' => '<p class="faq-title">motso</p><p class="faq-title">cauhoi</p><p class="faq-title">thuong</p><p class="faq-title">gap</p>',
+        'title-space' => '<p class="faq-title"><span class="first-word">C</span>âu <p><span class="first-word">h</span>ỏi</p><p><span class="first-word">t</span>hường</p> <p><span class="first-word">g</span>ặp</p>',
         'websites' => [
             'title' => 'Websites',
             'qa1' => [
@@ -108,7 +108,7 @@ return [
             'qa3' => [
                 'question' => 'Cách thức liên hệ?',
                 'slug' => 'cach-thuc-lien-he',
-                'answer' => 'Quý khách có thể liên hệ dễ dàng với chúng tôi thông qua form liên hệ <a href="/lien-he">Contact</a>'
+                'answer' => 'Quý khách có thể liên hệ dễ dàng với chúng tôi thông qua form <a href="/lien-he">Liên hệ ngay</a>'
             ],
             'qa4' => [
                 'question' => 'Lợi ích của việc xây dựng website?',
@@ -116,14 +116,14 @@ return [
                 'answer' => 'Xây dựng một website cũng giống như xây dựng một ngôi nhà trên Internet, giúp người dùng, khách hàng dễ dàng tìm kiếm , dễ dàng liên lạc, cập nhật thông tin một cách nhanh chóng, củng cố thêm niềm tin vào cửa hàng, doanh nghiệp của bạn. Đồng thời cũng giúp cho cửa hàng, doanh nghiệp,.. dễ dàng quảng bá sản phẩm đến khách hàng, dễ dàng tiếp cận khách hàng tiềm năng'
             ],
             'qa5' => [
-                'question' => 'Tốc độ website có nhanh không?',
+                'question' => 'Website có <b>tốc độ nhanh</b> không?',
                 'slug' => 'toc-do-website-co-nhanh-khong',
-                'answer' => 'Tốc độ website phụ thuộc vào nhiều yếu tố như: tốc độ đường truyền của internet, dải băng thông của server nhà cung cấp, thiết bị truy cập. Còn về phía sản phẩm, <a href="/"/><b>SPI Tech</b></a> luôn cố gắng tối ưu câu lệnh để mang lại chất lượng tốt nhất cho sản phẩm'
+                'answer' => 'Tốc độ website phụ thuộc vào nhiều yếu tố như: tốc độ đường truyền của internet, dải băng thông của server nhà cung cấp, thiết bị truy cập. Còn về phía sản phẩm, <a href="/"/><b>SUPLO Tek</b></a> luôn cố gắng tối ưu câu lệnh để mang lại chất lượng tốt nhất cho sản phẩm'
             ],
             'qa6' => [
-                'question' => 'Website có chuẩn SEO không?',
+                'question' => 'Website có chuẩn <b>SEO</b> không?',
                 'slug' => 'website-co-chuan-seo-khong',
-                'answer' => '<a href="/"/><b>SPI Tech</b></a> luôn cập nhật thuật toán mới nhất của GOOGLE áp dụng vào sản phẩm mang lại hiệu quả sớm nhất mà chưa cần những tác động của thủ thuật khác'
+                'answer' => '<a href="/"/><b>SUPLO Tek</b></a> luôn cập nhật thuật toán mới nhất của GOOGLE áp dụng vào sản phẩm mang lại hiệu quả sớm nhất mà chưa cần những tác động của thủ thuật khác'
             ],
         ]
     ],

@@ -26,17 +26,17 @@
                     <ul>
                         <li>
                             <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa4.slug') ]) }}">
-                                {{ __('fe.faqs.websites.qa4.question') }}
+                                {!! __('fe.faqs.websites.qa4.question') !!}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa5.slug') ]) }}">
-                                {{ __('fe.faqs.websites.qa5.question') }}
+                                {!! __('fe.faqs.websites.qa5.question') !!}
                             </a>
                         </li>
                         <li>
                             <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa6.slug') ]) }}">
-                                {{ __('fe.faqs.websites.qa6.question') }}
+                                {!! __('fe.faqs.websites.qa6.question') !!}
                             </a>
                         </li>
                     </ul>

@@ -60,11 +60,14 @@
             width: 100%;
         }
         .faqs-title p{
-            color: #47cf73;
+            color: #333;
             text-transform: uppercase;
-            text-align: justify;
+            /* text-align: justify; */
             font-size: 3em;
             font-weight: bold;
+        }
+        .faqs-title .first-word{
+            color: #47cf73;
         }
     </style>
 @endpush
@@ -75,14 +78,14 @@
     <div class="container qa-content">
         <div class="col-md-4">
             <div>
-                <div class="faqs-title">
+                <div class="faqs-title" data-aos="fade-right" data-aos-duration="1000">
                     {!! __('fe.faqs.title-space') !!}
                 </div>
             </div>
         </div>
         <div class="col-md-8">
             <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="1000">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa4.slug') }}">
@@ -95,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="1500">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa1.slug') }}">
@@ -108,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="2000">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa2.slug') }}">
@@ -121,11 +124,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="2500">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa5.slug') }}">
-                                <i class="fa  fa-question-circle-o icon-check"></i> {{ __('fe.faqs.websites.qa5.question') }}</a>
+                                <i class="fa  fa-question-circle-o icon-check"></i> {!! __('fe.faqs.websites.qa5.question') !!}</a>
                         </h4>
                     </div>
                     <div id="{{ __('fe.faqs.websites.qa5.slug') }}" class="panel-collapse collapse">
@@ -134,11 +137,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="3000">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa6.slug') }}">
-                                <i class="fa  fa-question-circle-o icon-check"></i> {{ __('fe.faqs.websites.qa6.question') }}</a>
+                                <i class="fa  fa-question-circle-o icon-check"></i> {!! __('fe.faqs.websites.qa6.question') !!}</a>
                         </h4>
                     </div>
                     <div id="{{ __('fe.faqs.websites.qa6.slug') }}" class="panel-collapse collapse">
@@ -147,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <div class="panel panel-default" data-aos="fade-left" data-aos-duration="3000">
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <a data-toggle="collapse" data-parent="#accordion" href="#{{ __('fe.faqs.websites.qa3.slug') }}">
@@ -166,56 +169,18 @@
 @endsection
 
 @push('js')
-<script>
-    const $qa_query = "{{request()->get('q')}}"
-
-    // auto open answer
-    const $qa = $(document).find('.panel-collapse')
-    if ($qa_query !== '') {
-        $.each($qa, function(index, val){
-            if ($(val).attr('id') == $qa_query) {
-                $(val).addClass('in')
-            } else $(val).removeClass('in')
-        })
-    } else {
-        $(".panel-collapse:first").addClass("in")
-    }
-
-    function dynamicSpacing(full_query, parent_element) {
-        $(full_query).css('letter-spacing', 0);
-        var content = $(full_query).html();
-        var original = content;
-        content = content.replace(/(\w|\s)/g, '<span class="faq-letter">$1</span>');
-        $(full_query).html(content);
-
-        var letter_width = 0;
-        var letters_count = 0;
-        const $faq_letter = $(full_query).find('.faq-letter')
-        $($faq_letter).each(function() {
-            letter_width += $(this).width();
-            letters_count++;
-        });
-
-        var h1_width = $(parent_element).width();
-        var spacing = (h1_width - letter_width) / (letters_count - 1);
-
-        $(full_query).html(original);
-        $(full_query).css('letter-spacing', spacing);
-    }
-
-    $(document).ready(function() {
-        const $faqTitle = $(document).find('.faq-title');
-        $.each($faqTitle, function(index, val) {
-            const $parentBox = $(val).parent('.faqs-title')
-            dynamicSpacing(val, $parentBox);
-        })
-
-        $(window).resize(function() {
-            $.each($faqTitle, function(index, val) {
-                const $parentBox = $(val).parent('.faqs-title')
-                dynamicSpacing(val, $parentBox);
+    <script>
+        const $qa_query = "{{request()->get('q')}}"
+        // auto open answer
+        const $qa = $(document).find('.panel-collapse')
+        if ($qa_query !== '') {
+            $.each($qa, function(index, val){
+                if ($(val).attr('id') == $qa_query) {
+                    $(val).addClass('in')
+                } else $(val).removeClass('in')
             })
-        });
-    });
-</script>
+        } else {
+            $(".panel-collapse:first").addClass("in")
+        }
+    </script>
 @endpush
