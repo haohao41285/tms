@@ -4,6 +4,11 @@
     {{__('fe.menu.about-us')}}
 @endsection
 
+@push('meta_seo')
+    <meta name="keywords" content="{{ __('fe.seo.about-us.keywords') }}" />
+    <meta name="description" content="{{ __('fe.seo.about-us.description') }}" />
+@endpush
+
 @push('css')
 	<style>
 		

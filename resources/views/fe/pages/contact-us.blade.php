@@ -4,6 +4,11 @@
     {{__('fe.menu.contact-us')}}
 @endsection
 
+@push('meta_seo')
+    <meta name="keywords" content="{{ __('fe.seo.contact-us.keywords') }}" />
+    <meta name="description" content="{{ __('fe.seo.contact-us.description') }}" />
+@endpush
+
 @push('css')
     <style>
         .required::after{

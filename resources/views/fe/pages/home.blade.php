@@ -4,6 +4,11 @@
     {{__('fe.menu.home')}}
 @endsection
 
+@push('meta_seo')
+    <meta name="keywords" content="{{ __('fe.seo.home.keywords') }}" />
+    <meta name="description" content="{{ __('fe.seo.home.description') }}" />
+@endpush
+
 @push('css')
     <style>
         .effect-1{
@@ -97,46 +102,34 @@
             <p class="sub_para_agile">{{ __('fe.faqs.title') }}</p>
             <div class="agile_team_grids_top">
                 <div class="col-md-4 w3_agile_services_grid">
-                    <div class="agile_services_grid1 wthree_services_grid1">
-                        <h3>Funding</h3>
-                        <div class="agile_services_grid1_sub">
-                            <p>05 January 2017</p>
-                        </div>
-                        <h4><span>Fund</span>ing</h4>
+                    <div class="agile_services_grid1 wthree_services_grid1" style="background: url({{ asset('images/faqs/question1.webp') }}) no-repeat center; background-size: cover">
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
                         
-                        <h4><a href="#" data-toggle="modal" data-target="#myModal">Sed dictum augue quis varius</a>
+                        <h4>
+                            <a href="{{ route('fe.qa', ['q'=> __('fe.faqs.websites.qa1.slug')]) }}">{{ __('fe.faqs.websites.qa1.question') }}</a>
                         </h4>
-                        <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
+                        <div class="faqs-content">{!! __('fe.faqs.websites.qa1.answer') !!}</div>
                     </div>
                 </div>
                 <div class="col-md-4 w3_agile_services_grid">
-                    <div class="agile_services_grid1 wthree_services_grid2">
-                        <h3>Funding</h3>
-                        <div class="agile_services_grid1_sub">
-                            <p>14 January 2017</p>
-                        </div>
-                        <h4><span>Fund</span>ing</h4>
+                    <div class="agile_services_grid1 wthree_services_grid2" style="background: url({{ asset('images/faqs/question2.png') }}) no-repeat center; background-size: cover">
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
-                        <h4><a href="#" data-toggle="modal" data-target="#myModal">lobortis sem dictum placerat</a>
+                        <h4>
+                            <a href="{{ route('fe.qa', ['q'=> __('fe.faqs.websites.qa2.slug')]) }}">{{ __('fe.faqs.websites.qa2.question') }}</a>
                         </h4>
-                        <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
+                        <div class="faqs-content">{!! __('fe.faqs.websites.qa2.description') ?? __('fe.faqs.websites.qa2.answer') !!}</div>
                     </div>
                 </div>
                 <div class="col-md-4 w3_agile_services_grid">
-                    <div class="agile_services_grid1 wthree_services_grid3">
-                        <h3>Funding</h3>
-                        <div class="agile_services_grid1_sub">
-                            <p>20 January 2017</p>
-                        </div>
-                        <h4><span>Fund</span>ing</h4>
+                    <div class="agile_services_grid1 wthree_services_grid3" style="background: url({{ asset('images/faqs/question3.jpg') }}) no-repeat center; background-size: cover">
                     </div>
                     <div class="agileits_w3layouts_services_grid1">
-                        <h4><a href="#" data-toggle="modal" data-target="#myModal">Praesent amet tempor risus</a>
+                        <h4>
+                            <a href="{{ route('fe.qa', ['q'=> __('fe.faqs.websites.qa3.slug')]) }}">{{ __('fe.faqs.websites.qa3.question') }}</a>
                         </h4>
-                        <p>Etiam quis placerat dui, sit amet tristique nisl. Donec eget finibus eros.</p>
+                        <div class="faqs-content">{!! __('fe.faqs.websites.qa3.answer') !!}</div>
                     </div>
                 </div>
 

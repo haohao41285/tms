@@ -563,7 +563,7 @@ ul.some_agile_facts i {
     color: #48506b;
     letter-spacing: 1px;
     font-size: 1em;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 /*-- Effect 1--*/
 .w3ls-special-text:after {
@@ -1125,7 +1125,7 @@ h3.w3l_header.w3_agileits_header.two {
 .footer_agile_w3ls li,.footer_agile_w3ls li a {
     display: block;
     color: #fff;
-    font-size: 1em;
+    font-size: 14px;
     line-height: 2em;
     text-transform: capitalize;
 }
@@ -1520,7 +1520,7 @@ p.b_label {
 	margin-top:2em;
 }
 .wthree_services_grid1{
-	background:url(../images/g4.jpg) no-repeat 0px 0px;
+	/* background:url(../images/g4.jpg) no-repeat 0px 0px; */
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1528,7 +1528,7 @@ p.b_label {
 	-ms-background-size:cover;
 }
 .wthree_services_grid2{
-	background:url(../images/g3.jpg) no-repeat 0px 0px;
+	/* background:url(../images/g3.jpg) no-repeat 0px 0px; */
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1536,7 +1536,7 @@ p.b_label {
 	-ms-background-size:cover;
 }
 .wthree_services_grid3{
-	background:url(../images/g1.jpg) no-repeat 0px 0px;
+	/* background:url(../images/g1.jpg) no-repeat 0px 0px; */
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -1613,7 +1613,7 @@ p.b_label {
 }
 .agileits_w3layouts_services_grid1 h4 a{
     text-transform: capitalize;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #121213;
     line-height: 1.5em;
     text-decoration: none;
@@ -2097,11 +2097,27 @@ h3.agileits-icons-title {
 	display: inline;
 }
 .qa-content{
-	margin: 2em auto;
+	margin: 5em auto;
 	min-height: 400px;
 }
 .our-tech-icon{
 	width: 6em;
+}
+.w3_agile_services_grid h4:first-child{
+	margin-top: 1em;
+}
+.w3_agile_services_grid div, .w3_agile_services_grid ul{
+	display: block;
+	display: -webkit-box;
+	/* max-width: 100%; */
+	/* height: 43px; */
+	/* margin: 0 auto; */
+	/* font-size: 14px; */
+	/* line-height: 1; */
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 /*// Custom */
 @media (max-width:1080px){
@@ -3454,7 +3470,8 @@ h2.typoh2{
 }	
 @media (max-width: 480px){
 	.w3ls_banner_bottom_right {
-		width: 78%;
+		width: 100%;
+		padding: 0;
 	}
 	.nav > li > a {
 		font-size: 12px;
@@ -3512,7 +3529,8 @@ h2.typoh2{
 		margin: 2em auto;
 	}
 	.w3l_stats_bottom_grid_left {
-		width: 65%;
+		width: 100%;
+		padding: 0;
 	}	
 	.modal-body {
 		padding: 1.5em;
@@ -3581,10 +3599,10 @@ h2.typoh2{
 		min-height: 200px;
 	}
 	.w3ls-special-text h4 {
-		font-size: 1.2em;
-		margin:3em 0 0 0;
+		font-size: 2em;
+		margin:2em 0 0 0;
 		letter-spacing: 2px;
-		margin-bottom: 0.5em;
+		/* margin-bottom: 0.5em; */
 	}
 	.w3ls-special-text:after {
 		position: absolute;

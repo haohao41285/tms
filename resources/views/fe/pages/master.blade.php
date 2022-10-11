@@ -2,11 +2,17 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title>{{ENV('APP_NAME')}} | @yield('title')</title>
+    <title>@yield('title') - {{ENV('APP_NAME')}}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="" />
+
+    <link rel="shortcut icon" href="{{ asset('images/logo/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/logo/favicon_32x32.png') }}" sixe="32x32">
+    <link rel="icon" href="{{ asset('images/logo/favicon_192x192.png') }}" sixe="196x196">
+
+    @stack('meta_seo')
+    
     @include('fe.lib._css')
 
     @stack('css')

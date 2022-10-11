@@ -80,7 +80,70 @@ return [
         ]
     ],
     'faqs' => [
-        'title' => 'Some frequently asked questions'
+        'title' => 'Some frequently asked questions',
+        'title-space' => '<p class="faq-title">Some</p><p class="faq-title">frequently</p><p class="faq-title">asked</p><p class="faq-title">questions</p>',
+        'websites' => [
+            'title' => 'Websites',
+            'qa1' => [
+                'question' => 'How long does it take to build a website?',
+                'slug' => 'how-long-does-it-take-to-build-a-website',
+                'answer' => 'Usually from 1, 2 months after agreeing on the plan. Depending on the type of project and your requirements in terms of functionality, interface as well as the technology used, the time may be faster or longer.'
+            ],
+            'qa2' => [
+                'question' => 'Workflow to build a website?',
+                'slug' => 'workflow-to-build-a-website',
+                'description' => 'With a clear step-by-step process:',
+                'answer' => '<ul>
+                    <li>Working with customers on general requirements</li>
+                    <li>Preliminary sketch, consulting on customer functions</li>
+                    <li>Design ideas, interface design</li>
+                    <li>Send customer design for approval and feedback</li>
+                    <li>Build backend</li>
+                    <li>Send customers to test, approve, and feedback</li>
+                    <li>Edit, update</li>
+                    <li>Complete</li>
+                </ul>',
+                'note' => 'The project will be warranted for life. Upgrades are charged by function and customer level (may be free)'
+            ],
+            'qa3' => [
+                'question' => 'How to contact?',
+                'slug' => 'how-to-contact',
+                'answer' => 'You can easily contact us through the contact form <a href="/lien-he">Contact</a>'
+            ],
+            'qa4' => [
+                'question' => 'Benefits of building a website?',
+                'slug' => 'benefits-of-building-a-website',
+                'answer' => 'Building a website is like building a house on the Internet, helping users and customers easily find, easily contact, update information quickly, strengthen trust in your store, business. At the same time, it also helps store, businesses, .. easily promote products to customers, easily approach potential customers.'
+            ],
+            'qa5' => [
+                'question' => 'Is the website speed fast?',
+                'slug' => 'is-the-website-speed-fast',
+                'answer' => 'Website speed depends on many factors such as: internet connection speed, bandwidth of provider server, access device. As for the product side, <a href="/"/><b>SPI Tech</b></a> always tries to optimize the command to bring the best quality for the product.'
+            ],
+            'qa6' => [
+                'question' => 'Does the website have SEO standards?',
+                'slug' => 'does-the-website-have-seo-standards',
+                'answer' => "<a href='/'/><b>SPI Tech</b></a> always updates GOOGLE's latest algorithm applied to the product to bring the earliest effect without the impact of any influence other move"
+            ],
+        ]
+    ],
+    'seo' => [
+        'home' => [
+            'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
+            'description' => 'Freelance website design according to customer needs SPITech'
+        ],
+        'about-us' => [
+            'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
+            'description' => 'With senior members in professional design and website operation, we will bring quality products to customers SPITech'
+        ],
+        'faqs' => [
+            'keywords' => 'website design, web design, web design, cheap web, freelance web, hire as a freelance website',
+            'description' => 'Frequently asked questions when making a website SPITech'
+        ],
+        'contact-us' => [
+            'keywords' => 'contact website design, contact web design, contact website design, contact cheap web, contact web freelance, contact web freelance',
+            'description' => 'contact us SPITech'
+        ],
     ],
     'validate' => [
         'name' => [

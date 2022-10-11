@@ -33,7 +33,7 @@
                     </ul>
                 </li>
             </ul>
-            <h1><a class="navbar-brand" href="{{ route('fe.home') }}"><span>S</span>PI Tech</a></h1>
+            <h1><a class="navbar-brand" href="{{ route('fe.home') }}"><span>S</span>uplo Tek</a></h1>
         </div>
         
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">

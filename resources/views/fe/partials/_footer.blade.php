@@ -4,7 +4,7 @@
         <div class="agileits_w3layouts_footer_grids">
             <div class="row">
                 <div class="col-md-3 footer-w3-agileits">
-                    <h3>Spi Tech</h3>
+                    <a href="{{ route('fe.home') }}"><h3>Spi Tech</h3></a>
                     <ul>
                         <li>
                             <a class="{{ $active && $active == 'home' ? 'active' : '' }}" href="{{ route('fe.home') }}">{{ __('fe.menu.home') }}</a>
@@ -24,10 +24,21 @@
                 <div class="col-md-6 footer-agileits">
                     <h3>{{ __('fe.menu.faqs') }}</h3>
                     <ul>
-                        <li>the printing</li>
-                        <li>Etiam quis placerat</li>
-                        <li>Lorem Ipsum</li>
-                        <li>unknown printer</li>
+                        <li>
+                            <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa4.slug') ]) }}">
+                                {{ __('fe.faqs.websites.qa4.question') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa5.slug') ]) }}">
+                                {{ __('fe.faqs.websites.qa5.question') }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('fe.qa', ['q' => __('fe.faqs.websites.qa6.slug') ]) }}">
+                                {{ __('fe.faqs.websites.qa6.question') }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
