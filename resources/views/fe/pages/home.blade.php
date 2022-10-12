@@ -70,7 +70,7 @@
             <h4 data-aos="fade-right" data-aos-duration="2000">{{ __('fe.home.project.type') }}</h4>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-1" data-aos="fade-right" data-aos-duration="1000">
-            <div class="w3ls-special-text effect-1" data-aos="fade-up" data-aos-duration="2000">
+            <div class="w3ls-special-text effect-1">
                 <h4>{{ __('fe.home.project.type1.name') }}</h4>
                 <ul>
                     <li>{{ __('fe.home.project.type1.description') }}</li>
@@ -78,7 +78,7 @@
             </div>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-2" data-aos="fade-right" data-aos-duration="1000">
-            <div class="w3ls-special-text effect-1" data-aos="fade-up" data-aos-duration="2000">
+            <div class="w3ls-special-text effect-1">
                 <h4>{{ __('fe.home.project.type2.name') }}</h4>
                 <ul>
                     <li>{{ __('fe.home.project.type2.description') }}</li>
@@ -86,7 +86,7 @@
             </div>
         </div>
         <div class="col-md-3 w3ls-special-img w3l-grid-3" data-aos="fade-right" data-aos-duration="1000">
-            <div class="w3ls-special-text effect-1" data-aos="fade-up" data-aos-duration="2000">
+            <div class="w3ls-special-text effect-1">
                 <h4>{{ __('fe.home.project.type3.name') }}</h4>
                 <ul>
                     <li>{{ __('fe.home.project.type3.description') }}</li>

@@ -39,10 +39,8 @@
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LW8X88"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    @include('fe.partials._google-facebook-tag')
+
     @include('fe.partials._header')
 
     @yield('content')
