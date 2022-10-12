@@ -16,4 +16,7 @@
     body {
         font-family: 'Nunito', sans-serif;
     }
+    html, body {
+            overflow-x: hidden;
+        }
 </style>

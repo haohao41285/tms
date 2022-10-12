@@ -4,7 +4,6 @@
 <script>
     AOS.init();
   </script>
-{{-- <script type="text/javascript" src="{{asset('js/dscountdown.min.js') }}"></script> --}}
 
 <script src="{{ asset('js/mainScript.js') }}"></script>
 <script src="{{ asset('js/rgbSlide.min.js') }}"></script>
@@ -130,12 +129,4 @@
 
 <script src="{{ asset('js/custom.js') }}"></script>
 
-<script>
-    $('#exampleSlider').on('beforeChange', function(event, { slideCount: count }, currentSlide, nextSlide){
-        console.log(currentSlide)
-        // let selectors = [nextSlide, nextSlide - count, nextSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
-        // $('.slick-now').removeClass('slick-now');
-        // $(selectors).addClass('slick-now');
-    });
-</script>
 
