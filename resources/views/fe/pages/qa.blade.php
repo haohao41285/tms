@@ -7,6 +7,10 @@
 @push('meta_seo')
     <meta name="keywords" content="{{ __('fe.seo.faqs.keywords') ." - ". ENV('APP_NAME') }}" />
     <meta name="description" content="{{ __('fe.seo.faqs.description') ." - ". ENV('APP_NAME') }}" />
+    <meta property="og:url" content="{{ route('fe.qa') }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{__('fe.menu.faqs')}}" />
+    <meta property="og:description" content="{{ __('fe.seo.faqs.description') ." - ". ENV('APP_NAME') }}" />
 @endpush
 
 @push('css')
